@@ -30,25 +30,27 @@ export default function Home() {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '8px 12px',
+        padding: '10px 16px',
         backgroundColor: '#17181C',
         borderBottom: '1px solid rgba(255, 255, 255, 0.05)'
       }}>
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '6px'
+          gap: '8px'
         }}>
           <div style={{
             display: 'flex',
             alignItems: 'center',
             gap: '4px',
-            backgroundColor: 'rgba(255, 255, 255, 0.05)',
-            padding: '4px 8px',
-            borderRadius: '8px'
+            backgroundColor: '#222327',
+            padding: '6px 8px',
+            borderRadius: '8px',
+            height: '32px',
+            boxSizing: 'border-box'
           }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="#0098EA"/>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginRight: '2px'}}>
+              <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="#0088CC"/>
               <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="white"/>
             </svg>
             <span style={{
@@ -60,47 +62,47 @@ export default function Home() {
               gap: '2px',
               fontWeight: '500'
             }}>
-              0.087
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: '2px'}}>
+              0
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: '1px', opacity: 0.5}}>
                 <path d="M7 10L12 15L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </div>
           <button style={{
-            backgroundColor: '#2C2D31',
+            backgroundColor: '#222327',
             border: 'none',
             color: '#ffffff',
-            width: '28px',
-            height: '28px',
+            width: '32px',
+            height: '32px',
             borderRadius: '50%',
-            fontSize: '16px',
+            fontSize: '20px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: 0,
-            boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
-            transition: 'background-color 0.2s'
+            transition: 'background-color 0.2s',
+            fontWeight: '300'
           }}>+</button>
           <button style={{
-            backgroundColor: '#2C2D31',
+            backgroundColor: '#222327',
             border: 'none',
             color: '#ffffff',
-            width: '28px',
-            height: '28px',
+            width: '32px',
+            height: '32px',
             borderRadius: '50%',
-            fontSize: '16px',
+            fontSize: '20px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: 0,
-            boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
-            transition: 'background-color 0.2s'
+            transition: 'background-color 0.2s',
+            fontWeight: '300'
           }}>-</button>
           <div style={{
-            width: '28px',
-            height: '28px',
+            width: '32px',
+            height: '32px',
             borderRadius: '50%',
             backgroundColor: '#FF424F',
             display: 'flex',
@@ -113,19 +115,19 @@ export default function Home() {
           backgroundColor: '#3B99FC',
           border: 'none',
           color: '#ffffff',
-          padding: '8px 12px',
-          borderRadius: '8px',
-          fontSize: '14px',
+          padding: '8px 16px',
+          borderRadius: '12px',
+          fontSize: '15px',
           cursor: 'pointer',
           fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
           display: 'flex',
           alignItems: 'center',
-          gap: '6px',
-          boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
-          fontWeight: '500',
-          transition: 'background-color 0.2s'
+          gap: '8px',
+          height: '32px',
+          boxSizing: 'border-box',
+          fontWeight: '500'
         }}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="white"/>
             <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="#3B99FC"/>
           </svg>
