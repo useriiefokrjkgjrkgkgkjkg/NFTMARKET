@@ -1,12 +1,23 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
+  const [balance, setBalance] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     // Инициализация Telegram WebApp
     const tg = window.Telegram.WebApp;
     tg.expand();
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div style={{
@@ -64,48 +75,12 @@ export default function Home() {
               opacity: 0.9,
               paddingTop: '1px'
             }}>
-              0
+              {balance}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: '2px', opacity: 0.5}}>
                 <path d="M7 10L12 15L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </div>
-          <button style={{
-            backgroundColor: '#222327',
-            border: 'none',
-            color: '#ffffff',
-            width: '40px',
-            height: '40px',
-            borderRadius: '50%',
-            fontSize: '24px',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '0 0 2px 0',
-            transition: 'background-color 0.2s',
-            fontWeight: '300',
-            opacity: 0.9,
-            userSelect: 'none'
-          }}>+</button>
-          <button style={{
-            backgroundColor: '#222327',
-            border: 'none',
-            color: '#ffffff',
-            width: '40px',
-            height: '40px',
-            borderRadius: '50%',
-            fontSize: '24px',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '0 0 2px 0',
-            transition: 'background-color 0.2s',
-            fontWeight: '300',
-            opacity: 0.9,
-            userSelect: 'none'
-          }}>-</button>
         </div>
 
         <button style={{
@@ -113,7 +88,7 @@ export default function Home() {
           border: 'none',
           color: '#ffffff',
           padding: '0 16px',
-          borderRadius: '12px',
+          borderRadius: '20px',
           fontSize: '15px',
           cursor: 'pointer',
           fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
@@ -124,7 +99,7 @@ export default function Home() {
           boxSizing: 'border-box',
           fontWeight: '500',
           userSelect: 'none'
-        }}>
+        }} onClick={openModal}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="white"/>
             <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="#3B99FC"/>
@@ -149,6 +124,33 @@ export default function Home() {
           в процессе
         </h1>
       </div>
+
+      {isModalOpen && (
+        <div style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          backgroundColor: '#1c1c1e',
+          padding: '20px',
+          borderRadius: '10px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+          zIndex: 1000
+        }}>
+          <h2 style={{ color: '#ffffff' }}>Deposit</h2>
+          <p style={{ color: '#ffffff' }}>Enter the amount you want to deposit</p>
+          <button onClick={closeModal} style={{
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            background: 'none',
+            border: 'none',
+            color: '#ffffff',
+            fontSize: '20px',
+            cursor: 'pointer'
+          }}>×</button>
+        </div>
+      )}
     </div>
   );
 } 
