@@ -1,16 +1,16 @@
 import { Telegraf } from 'telegraf';
 
-const bot = new Telegraf('7945811630:AAGkcI6sziITz2Joq02tp05eiA1sbDdb3Pc');
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.command('start', async (ctx) => {
   try {
-    await ctx.reply('Добро пожаловать!', {
+    await ctx.reply('Welcome!', {
       reply_markup: {
         inline_keyboard: [
           [
             {
-              text: 'Открыть мини-приложение',
-              web_app: { url: 'https://your-vercel-app-url.vercel.app' }
+              text: 'Open Mini App',
+              web_app: { url: process.env.NEXT_PUBLIC_APP_URL }
             }
           ]
         ]
@@ -18,7 +18,7 @@ bot.command('start', async (ctx) => {
     });
   } catch (error) {
     console.error('Error in /start command:', error);
-    await ctx.reply('Произошла ошибка. Пожалуйста, попробуйте позже.');
+    await ctx.reply('An error occurred. Please try again later.');
   }
 });
 
