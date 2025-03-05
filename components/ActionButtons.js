@@ -5,7 +5,7 @@ const ActionButtons = ({ openModal }) => {
         backgroundColor: '#3B99FC',
         border: 'none',
         color: '#ffffff',
-        width: '36px',
+        width: '38px',
         height: '36px',
         borderRadius: '50%',
         fontSize: '20px',
@@ -15,7 +15,7 @@ const ActionButtons = ({ openModal }) => {
         justifyContent: 'center',
         padding: '0 0 1px 0',
         transition: 'background-color 0.2s',
-        fontWeight: '400',
+        fontWeight: '500',
         opacity: 0.9,
         userSelect: 'none'
       }} onClick={openModal}>+</button>
@@ -23,7 +23,7 @@ const ActionButtons = ({ openModal }) => {
         backgroundColor: '#3B99FC',
         border: 'none',
         color: '#ffffff',
-        width: '36px',
+        width: '38px',
         height: '36px',
         borderRadius: '50%',
         fontSize: '20px',
@@ -33,7 +33,7 @@ const ActionButtons = ({ openModal }) => {
         justifyContent: 'center',
         padding: '0 0 1px 0',
         transition: 'background-color 0.2s',
-        fontWeight: '400',
+        fontWeight: '500',
         opacity: 0.9,
         userSelect: 'none'
       }}>-</button>
@@ -41,7 +41,7 @@ const ActionButtons = ({ openModal }) => {
         backgroundColor: '#3B99FC',
         border: 'none',
         color: '#ffffff',
-        padding: '0 16px',
+        padding: '0 18px',
         borderRadius: '20px',
         fontSize: '15px',
         cursor: 'pointer',
@@ -51,7 +51,7 @@ const ActionButtons = ({ openModal }) => {
         gap: '6px',
         height: '36px',
         boxSizing: 'border-box',
-        fontWeight: '400',
+        fontWeight: '500',
         userSelect: 'none'
       }}>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

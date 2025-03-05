@@ -5,7 +5,7 @@ const Balance = () => {
       alignItems: 'center',
       gap: '4px',
       backgroundColor: '#222327',
-      padding: '0 12px',
+      padding: '0 14px',
       borderRadius: '14px',
       height: '36px',
       boxSizing: 'border-box'
@@ -21,7 +21,7 @@ const Balance = () => {
         display: 'flex',
         alignItems: 'center',
         gap: '2px',
-        fontWeight: '400',
+        fontWeight: '500',
         opacity: 0.9,
         paddingTop: '1px'
       }}>
