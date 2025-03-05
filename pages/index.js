@@ -30,73 +30,79 @@ export default function Home() {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '12px 16px',
-        backgroundColor: '#1a1b1e',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+        padding: '8px 12px',
+        backgroundColor: '#17181C',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.05)'
       }}>
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '6px'
         }}>
           <div style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '4px'
+            gap: '4px',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            padding: '4px 8px',
+            borderRadius: '8px'
           }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="#0098EA"/>
               <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="white"/>
             </svg>
             <span style={{
               color: '#ffffff',
-              fontSize: '18px',
-              fontFamily: 'Arial, sans-serif',
+              fontSize: '15px',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
               display: 'flex',
               alignItems: 'center',
-              gap: '4px'
+              gap: '2px',
+              fontWeight: '500'
             }}>
-              0
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              0.087
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: '2px'}}>
                 <path d="M7 10L12 15L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </div>
           <button style={{
-            backgroundColor: '#3a3b3e',
+            backgroundColor: '#2C2D31',
             border: 'none',
             color: '#ffffff',
-            width: '32px',
-            height: '32px',
+            width: '28px',
+            height: '28px',
             borderRadius: '50%',
-            fontSize: '18px',
+            fontSize: '16px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: 0,
-            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+            boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
+            transition: 'background-color 0.2s'
           }}>+</button>
           <button style={{
-            backgroundColor: '#3a3b3e',
+            backgroundColor: '#2C2D31',
             border: 'none',
             color: '#ffffff',
-            width: '32px',
-            height: '32px',
+            width: '28px',
+            height: '28px',
             borderRadius: '50%',
-            fontSize: '18px',
+            fontSize: '16px',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: 0,
-            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+            boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
+            transition: 'background-color 0.2s'
           }}>-</button>
           <div style={{
-            width: '32px',
-            height: '32px',
+            width: '28px',
+            height: '28px',
             borderRadius: '50%',
-            backgroundColor: '#ff6b6b',
+            backgroundColor: '#FF424F',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
@@ -104,22 +110,24 @@ export default function Home() {
         </div>
 
         <button style={{
-          backgroundColor: '#3b99fc',
+          backgroundColor: '#3B99FC',
           border: 'none',
           color: '#ffffff',
-          padding: '8px 16px',
+          padding: '8px 12px',
           borderRadius: '8px',
-          fontSize: '16px',
+          fontSize: '14px',
           cursor: 'pointer',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px',
-          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+          gap: '6px',
+          boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
+          fontWeight: '500',
+          transition: 'background-color 0.2s'
         }}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="white"/>
-            <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="#3b99fc"/>
+            <path d="M17 8.5L7 13.5L10 15.5L13 12.5L11 16.5L14 17.5L17 8.5Z" fill="#3B99FC"/>
           </svg>
           Connect Wallet
         </button>
