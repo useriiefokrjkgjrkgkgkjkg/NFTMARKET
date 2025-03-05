@@ -17,7 +17,7 @@ bot.command('start', async (ctx) => {
           [
             {
               text: 'ОТКРЫТЬ ТЕСТ',
-              web_app: { url: process.env.NEXT_PUBLIC_APP_URL }
+              web_app: { url: 'https://nftmarket-peach.vercel.app' }
             }
           ]
         ]
