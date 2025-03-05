@@ -4,12 +4,12 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.command('start', async (ctx) => {
   try {
-    await ctx.reply('Welcome!', {
+    await ctx.reply('ОТКРЫТЬ ТЕСТ', {
       reply_markup: {
         inline_keyboard: [
           [
             {
-              text: 'Open Mini App',
+              text: 'ОТКРЫТЬ ТЕСТ',
               web_app: { url: process.env.NEXT_PUBLIC_APP_URL }
             }
           ]
